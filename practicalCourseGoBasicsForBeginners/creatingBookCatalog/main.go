@@ -37,7 +37,7 @@ func main() {
 
 	//Используем цикл for range для вывода информации о каждой книге
 	for _, book := range catalog {
-		fmt.Printf("Название: '%', Автор: %s, Год: %d\n",
+		fmt.Printf("Название: '%s', Автор: %s, Год: %d\n",
 			book.Title, book.Author, book.Year)
 	}
 }
