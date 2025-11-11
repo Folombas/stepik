@@ -16,7 +16,7 @@ func main() {
 	runeCount := utf8.RuneCountInString(str)
 
 	// Вывод результатов
-	fmt.Print("Исходная строка: '%s'\n", str)
+	fmt.Printf("Исходная строка: '%s'\n", str)
 	fmt.Printf("Количество байтов: %d\n", byteCount)
 	fmt.Printf("Количество символов: %d\n", runeCount)
 }
