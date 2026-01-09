@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"math"
 )
 
 func main() {
@@ -16,10 +15,9 @@ func main() {
 		// Число > 10000: экспоненциальное представление
 		fmt.Printf("%e", num)
 	} else {
-		// 0 < число <= 10000: возводим в квадрат и обрезаем до 4 знаков
+		// 0 < число <= 10000: возводим в квадрат
 		squared := num * num
-		// Обрезаем дробную часть (не округляем!)
-		truncated := math.Trunc(squared*10000) / 10000
-		fmt.Printf("%.4f", truncated)
+		// Выводим с 4 знаками после запятой
+		fmt.Printf("%.4f", squared)
 	}
 }
